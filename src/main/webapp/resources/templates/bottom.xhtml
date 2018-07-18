@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="cssLayout.css"/>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+
+    <h:body>
+
+        <div id="bottom">
+            <ui:insert name="bottom">
+                <footer style="text-align: center">
+                    <a id="atrigger" class="btn btn-primary btn-sm" href="#amodal1" data-toggle="modal">Контакт</a>
+                </footer>
+            </ui:insert>
+        </div>
+        <b:modal id="amodal1" title="Контакт" styleClass="modalPseudoClass">
+
+
+            <b:form inline="true">
+                <h:panelGrid columns="3" cellpadding="5">
+                    <b:inputText label="Тел:" labelStyle="width:80px;" disabled="true" value="064/999-987" ></b:inputText>
+
+                    <b:inputText label="E-маил:" labelStyle="width:80px;" disabled="true" value="info@gmail.com"> </b:inputText>
+
+                </h:panelGrid>
+            </b:form>
+
+
+
+
+            <f:facet name="footer">
+                <b:button value="Ok" look="primary" dismiss="modal" />
+            </f:facet>
+        </b:modal>
+    </h:body>
+
+</html>

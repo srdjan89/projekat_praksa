@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Pocetna stranica</title>
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="cssLayout.css"/>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+    <h:body>
+        <ui:composition template="/resources/templates/masterLayout.xhtml">
+            <ui:define name="content">
+
+                <b:container>
+                    <b:row>
+                        <b:alert severity="success"><strong>Успешно сте се регистровали!</strong> Добићете обавештење од администратора након активације налога!</b:alert>
+                    </b:row>
+
+                    <hr/>
+                </b:container>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

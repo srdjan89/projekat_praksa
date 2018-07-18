@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Pocetna stranica</title>
+        <h:outputStylesheet name="css/jsfcrud.css"/>
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="cssLayout.css"/>
+        <h:outputStylesheet library="css" name="style.css"/>
+
+    </h:head>
+    <h:body>
+        <ui:composition template="/resources/templates/masterLayout.xhtml">
+            <ui:define name="content">
+                <b:jumbotron id="jumbotron">
+                    <b:container>
+                        <h1>Hello, world!</h1>
+                        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content.
+                            Use it as a starting point to create something more unique.
+                        </p>
+                        <p>
+                            <a href="stranica.xhtml" class="btn btn-lg btn-primary">View Page Source »</a>
+                        </p>
+                    </b:container>
+
+                </b:jumbotron>
+                <b:container>
+                    <b:row>
+                        <b:column col-md="4">
+                            <h2>Heading</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                                ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><b:button class="btn btn-sm btn-primary" outcome="" value="View details »"/></p>
+                        </b:column>
+                        <b:column col-md="4">
+                            <h2>Heading22</h2>
+                            <p>#{resources.halloween} </p>
+                            <p><b:button class="btn btn-sm btn-primary" outcome="" value="View details »"/></p>
+                        </b:column>
+                        <b:column col-md="4">
+                            <h2>Heading</h2>
+                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                                ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                            <p><b:button class="btn btn-sm btn-primary" outcome="" value="View details »"/></p>
+                        </b:column>
+                    </b:row>
+
+                    <hr/>
+                </b:container>
+            </ui:define>
+        </ui:composition>
+        <br />
+        <h:link outcome="/administrator/List" value="Show All Administrator Items"/>
+        <br />
+        <h:link outcome="/kategorijaVesti/List" value="Show All KategorijaVesti Items"/>
+        <br />
+        <h:link outcome="/korisnik/List" value="Show All Korisnik Items"/>
+        <br />
+        <h:link outcome="/mesto/List" value="Show All Mesto Items"/>
+        <br />
+        <h:link outcome="/oblastDelovanja/List" value="Show All OblastDelovanja Items"/>
+        <br />
+        <h:link outcome="/organizacija/List" value="Show All Organizacija Items"/>
+        <br />
+        <h:link outcome="/status/List" value="Show All Status Items"/>
+        <br />
+        <h:link outcome="/ulica/List" value="Show All Ulica Items"/>
+        <br />
+        <h:link outcome="/vesti/List" value="Show All Vesti Items"/>
+    </h:body>
+
+
+
+
+
+
+
+
+
+</html>
